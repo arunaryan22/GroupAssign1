@@ -1,22 +1,18 @@
 package org.greatlearning.model;
 
-public class AdminDepartment extends SuperDepartment
-{
-public AdminDepartment() {
-	// TODO Auto-generated constructor stub
-	departmentName();
-getTodaysWork()	
+//subclass AdminDepartment will inherit super class SuperDepartment
+class AdminDepartment extends SuperDepartment {
+
 	public String departmentName() {
+		//System.out.println("Admin Department");
 		return "Admin Department";
 	}
-public String getTodaysWork() {
-	return "Complete your document submission";
-}
-public String getWorkDeadline() {
-	return "Complete by EOD";
-}
-}
 
-	
+	public String getTodaysWork() {
+		return "Complete your document submission";
+	}
 
+	public String getWorkDeadline() {
+		return "Complete by EOD";
+	}
 }
